@@ -1,36 +1,67 @@
 body{
-    background-color: lightblue;
+    background-color: rgb(129, 165, 177);
     font-family: sans-serif;
 
     margin: 0;
 
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-header{
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    background-color: coral;
-    align-items: center;
-    padding: 10px;
 }
-.logo {
+.contenedor a{
+    font-size: 30px;
+    transition: all ease 300ms;
+}
+.facebook{
+    color: blue;
+}
+.whatsapp{
+    color: forestgreen;
+}
+.instagram{
+    color: rgb(66, 28, 128);
+}
+.twitter{
+    color: rgb(36, 86, 131);
+}
+.telegram{
+    color: blue;
+}
+.contenedor a :hover{
+    transform: scaleX(1.2);
+}
+.header{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 800px;
+    border: 2px solid black;
+    background-color: rgb(70, 173, 187);
+}
+.header a{
+    font-size: 30px;
+    transition: all ease 300ms;
+}
+.home {
+    color: blue;
+}
+.header a :hover{
+    transform: scale(1.2);
+}
+#logo {
+    height: 40%;
+    width: 10%;
 }
 
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-}
 nav a{
     border: 1px solid;
     font-weight: 600;
     padding-right: 10px;
+    justify-content: flex-end;
     
 }
 nav a:hover{
@@ -40,4 +71,7 @@ nav a:hover{
     header {
         flex-direction: column;
     }
+}
+footer{
+    background-color: black;
 }

@@ -28,16 +28,19 @@ header{
     margin-right: 10px;
 }
 nav a{
-    border: 1px solid;
+    border: 1px solid black;
     font-weight: 600;
     padding-right: 10px;
-    
+    float: right;
+    align-self: stretch;
 }
 nav a:hover{
+    justify-content: flex-end;
     color: white;
 }
-@media (max-width 700px) {
-    header {
-        flex-direction: column;
-    }
+
+#navegacion {
+    position: relative;
+    justify-content: flex-end;
+
 }
